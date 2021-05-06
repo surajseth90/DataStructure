@@ -37,6 +37,12 @@ public class MyLinkedList {
 		}
 	}
 
+	public void insertBetween(INode myNode, INode nodeBetween) {
+		INode tempNode = myNode.getNext();
+		myNode.setNext(nodeBetween);
+		nodeBetween.setNext(tempNode);
+	}
+
 	public void printMyNode() {
 		StringBuffer myNodes = new StringBuffer("My Nodes");
 		INode tempNode = head;
