@@ -8,7 +8,7 @@ import com.bridgelabz.linkedlist.MyNode;
 
 public class MyQueueTest {
 	@Test
-	public void given3NumbersWhenAddedTotackShouldBeAddedToTop() {
+	public void given3NumbersWhenAddedToQueueShouldBeAddedToTop() {
 		MyNode<Integer> myFirstNode = new MyNode<Integer>(70);
 		MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
 		MyNode<Integer> myThirdNode = new MyNode<Integer>(56);
