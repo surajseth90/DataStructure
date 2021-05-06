@@ -2,6 +2,7 @@ package com.bridgelabz.stackandqueue;
 
 import com.bridgelabz.linkedlist.INode;
 import com.bridgelabz.linkedlist.MyLinkedList;
+import com.bridgelabz.linkedlist.MyNode;
 public class MyStack {
 	private MyLinkedList myLinkedList;
 	
@@ -9,9 +10,9 @@ public class MyStack {
 		this.myLinkedList = myLinkedList;
 	}
 
-	public void push (INode myNode)
+	public INode pop ()
 	{
-		myLinkedList.add(myNode);
+		return myLinkedList.pop();
 	}
 
 	public void printStack() {
@@ -21,6 +22,11 @@ public class MyStack {
 
 	public INode peak() {
 	return myLinkedList.head;
+		
+	}
+
+	public void push(INode myNode) {
+		myLinkedList.add(myNode);
 		
 	}
 
