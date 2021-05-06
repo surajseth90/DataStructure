@@ -60,10 +60,10 @@ public class MyLinkedList {
 
 	}
 
-	public boolean search(INode head) {
+	public boolean search(Integer Key) {
 		INode current = head;
 		while (current != null) {
-			if (current.getNext() != null)
+			if (current.getKey() == Key)
 				return true;
 			current = current.getNext();
 		}

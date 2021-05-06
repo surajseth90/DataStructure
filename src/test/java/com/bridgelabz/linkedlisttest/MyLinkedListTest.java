@@ -48,5 +48,14 @@ public class MyLinkedListTest {
 				&& myLinkedList.tail.equals(myThirdNode);
 		Assert.assertTrue(result);
 	}
+	
+	@Test
+	public void givenNumberWhenSearchInLinkedListShouldBeReturnTrueWhenFind() {
+		MyNode<Integer> myFirstNode = new MyNode<Integer>(70);
+		MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
+		MyNode<Integer> myThirdNode = new MyNode<Integer>(56);
+		MyLinkedList myLinkedList = new MyLinkedList();
+		Assert.assertEquals(true , myLinkedList.search(30));
+	}
 
 }
