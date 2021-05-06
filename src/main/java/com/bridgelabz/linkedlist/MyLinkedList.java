@@ -60,6 +60,16 @@ public class MyLinkedList {
 
 	}
 
+	public boolean search(INode head) {
+		INode current = head;
+		while (current != null) {
+			if (current.getNext() != null)
+				return true;
+			current = current.getNext();
+		}
+		return false;
+	}
+
 	public void printMyNode() {
 		StringBuffer myNodes = new StringBuffer("My Nodes");
 		INode tempNode = head;
