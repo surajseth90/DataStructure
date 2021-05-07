@@ -60,14 +60,14 @@ public class MyLinkedList {
 
 	}
 
-	public boolean search(Integer Key) {
-		INode current = head;
+	public <K> INode <K> search(K Key) {
+		INode <K> current = head;
 		while (current != null) {
 			if (current.getKey() == Key)
-				return true;
+				return current;
 			current = current.getNext();
 		}
-		return false;
+		return null;
 	}
 
 	public void printMyNode() {

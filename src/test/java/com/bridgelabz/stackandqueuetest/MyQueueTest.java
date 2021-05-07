@@ -1,4 +1,5 @@
 package com.bridgelabz.stackandqueuetest;
+
 import com.bridgelabz.stackandqueue.MyQueue;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,8 +19,8 @@ public class MyQueueTest {
 		myQueue.push(myThirdNode);
 		myQueue.printStack();
 		myQueue.peak();
-		INode peak =myQueue.peak();
+		INode peak = myQueue.peak();
 		Assert.assertEquals(myFirstNode, peak);
-		
+
 	}
 }

@@ -1,4 +1,5 @@
 package com.bridgelabz.stackandqueuetest;
+
 import com.bridgelabz.stackandqueue.MyStack;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,11 +19,11 @@ public class MyStackTest {
 		myStack.push(myThirdNode);
 		myStack.printStack();
 		myStack.peak();
-		INode peak =myStack.peak();
+		INode peak = myStack.peak();
 		Assert.assertEquals(myThirdNode, peak);
-		
+
 	}
-	
+
 	@Test
 	public void given3NumbersWhenPopedFromStackShouldBeRemoved() {
 		MyNode<Integer> myFirstNode = new MyNode<Integer>(70);
@@ -34,11 +35,9 @@ public class MyStackTest {
 		myStack.push(myThirdNode);
 		INode pop = myStack.pop();
 		myStack.printStack();
-		Assert.assertEquals(myThirdNode,pop);
-		
-		
-		
-		//Assert.assertEquals(myThirdNode, peak);
-		
+		Assert.assertEquals(myThirdNode, pop);
+
+		// Assert.assertEquals(myThirdNode, peak);
+
 	}
 }
