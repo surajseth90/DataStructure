@@ -60,8 +60,8 @@ public class MyLinkedList {
 
 	}
 
-	public <K> INode <K> search(K Key) {
-		INode <K> current = head;
+	public <K> INode<K> search(K Key) {
+		INode<K> current = head;
 		while (current != null) {
 			if (current.getKey() == Key)
 				return current;

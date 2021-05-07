@@ -2,7 +2,7 @@ package com.bridgelabz.hashmapandbinarytree;
 
 import com.bridgelabz.linkedlist.MyLinkedList;
 
-public class MyHashMap <K,V> {
+public class MyHashMap<K, V> {
 	MyLinkedList myLinkedList;
 
 	public MyHashMap() {
@@ -10,23 +10,20 @@ public class MyHashMap <K,V> {
 	}
 
 	public V get(K key) {
-		MyMapNode <K,V> myMapNode = (MyMapNode<K, V>) this.myLinkedList.search(key);
-		return ( myMapNode ==null) ? null : myMapNode.getValue();
-		
-		
+		MyMapNode<K, V> myMapNode = (MyMapNode<K, V>) this.myLinkedList.search(key);
+		return (myMapNode == null) ? null : myMapNode.getValue();
+
 	}
 
-	public void add(K key , V values) {
-		MyMapNode <K,V> myMapNode =  this.myLinkedList.search(key);
-		if(myMapNode == null) {
-			myMapNode = new MyMapNode<>(key , values);
+	public void add(K key, V values) {
+		MyMapNode<K, V> myMapNode = (MyMapNode<K, V>) this.myLinkedList.search(key);
+		if (myMapNode == null) {
+			myMapNode = new MyMapNode<>(key, values);
 			this.myLinkedList.append(myMapNode);
-		}else {
+		} else {
 			myMapNode.setValue(values);
 		}
-		
-	}
-	
 
-	
+	}
+
 }
