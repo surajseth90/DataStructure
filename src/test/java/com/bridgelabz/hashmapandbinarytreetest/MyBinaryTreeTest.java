@@ -16,5 +16,16 @@ public class MyBinaryTreeTest {
 		int size =myBinaryTree.getSize();
 		Assert.assertEquals(3, size);
 	}
+
+	@Test
+	public void givenNNumbersWhenAddedToBinaryTreeShouldReturnSizeN() {
+		MyBinaryTree<Integer> myBinaryTree = new MyBinaryTree<Integer>();
+		int n = 10;
+		for (int i = 0; i < n; i++) {
+			myBinaryTree.add(i+1);
+		}
+		int size =myBinaryTree.getSize();
+		Assert.assertEquals(n, size);
+	}
 }
  
